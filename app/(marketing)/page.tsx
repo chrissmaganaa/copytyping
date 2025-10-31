@@ -2,7 +2,7 @@
 
 import Footer from "@/components/made/Footer";
 import Headlines from "@/components/made/Headlines";
-import Navbar from "@/components/made/Navbar";
+import Headbar from "@/components/made/Headbar";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
@@ -11,7 +11,7 @@ export default function page() {
 
   return (
     <>
-      <Navbar />
+      <Headbar />
       <div className="bg-black h-screen flex flex-col items-center justify-center">
         <Headlines/>
         <Button 

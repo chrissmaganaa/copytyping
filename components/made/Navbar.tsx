@@ -7,6 +7,7 @@ export default function Navbar() {
         
         <div>auth</div>
       </div>
+      <div className='h-[65px]'/>
     </>
   )
 }

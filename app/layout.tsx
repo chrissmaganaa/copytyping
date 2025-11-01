@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function rootlayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} ${josefin.variable} antialiased`}>
         <ThemeProvider
           attribute="class"

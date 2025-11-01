@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export default function Privacy() {
+  const formattedDate = new Date().toLocaleDateString("en-US", {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
   return (
     <>
       <div className="w-full bg-[#101010] flex flex-col items-center font-josefin">
@@ -16,7 +22,8 @@ export default function Privacy() {
 
 
         <div className="w-2/4">
-          <div className="font-bold text-4xl my-8 text-center">Privacy Policy</div>
+          <div className="font-bold text-4xl mt-8 text-center">Privacy Policy</div>
+          <div className="font-light text-md mb-8 text-center text-[#666666]">Last updated on {formattedDate}</div>
 
           <hr className="mb-8"></hr>
 
@@ -167,7 +174,9 @@ export default function Privacy() {
             </div>
           </div>
         </div>
+        <div className="my-8"></div>
       </div>
+
       <Footer/>
     </>
   )
